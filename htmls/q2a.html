@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>OU Walking Club</title>
+   <link rel="stylesheet" href="../css/q2a.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="leftcolumn logoiv" style="width:110px;height:110px"> </div>
+  <h1>OU Walking Club</h1>
+  <p>A platform to take part in organised walks and socialise</p>
+</div>
+
+<div class="topnav">
+  <a class="current">Manage walks</a>
+  <a href="#">Manage events</a>
+  <a href="#">Manage membership</a>
+  <a href="#" style="float:right">alerts</a>
+  <a href="#" style="float:right">Login</a>
+  <a href="#" style="float:right">Register</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+  
+    <div class="card">
+      <h2>Add a new walk</h2> 
+       <form action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post"  id="form10" name="form10">  
+       
+	   <div class="element">	
+       <div class="leftcolumn"><label for="name">Name</label></div>	   
+	   
+	   <div class="rightcolumn"><input type="text" name="name" id="name" placeholder="Enter name" value=""></div>	
+	   
+	   </div>
+	   
+       <div class="element ">	   
+	   <label for="date">Date</label>  <input type="date" name="date" id="date" value=""/> 
+	   </div>	  
+	   
+       <div class="element ">	   
+	   <label for="starttime">Start time</label>  <input type="time" name="starttime" id="starttime" value=""/> 
+	   </div>	
+
+       <div class="element ">	   
+	   <label for="meetingpoint">Meeting point:</label>  <input type="text" placeholder="Enter meetingpoint" name="meetingpoint" id="meetingpoint" value=""/> 
+	   </div>
+       <div class="element ">	   
+	   <label for="distanceinmiles">Distance in miles:</label>  <input type="number" name="distanceinmiles" id="distanceinmiles" value=""/> 
+	   </div>	
+
+       <div class="element ">	   
+	   <label for="notes">Notes:</label>  <textarea id="notes" name="notes" rows="10" cols="30" required maxlength="100" minlength="10"></textarea>
+	   </div>
+	   
+       <div class="element ">	   
+	   <label for="status">Status:</label>  
+	   <select name="status" id="status" style="width: 100%;padding: 8px 10px;"> 
+	     <option value="Proposed">Proposed</option>
+		 <option value="Approved ">Approved </option>
+		 <option value="Rejected">Rejected</option>
+	   </select>
+	   </div>
+	   
+	   <input type="hidden" name="sessionID" value="12345678-09ab-1111-cdef"/>
+	   
+	   <div class="element " style="text-align:center">	   
+	    <input type="submit" value="Submit" />
+	   </div>
+      </form>
+     </div>
+ 
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Announcements</h2>
+      <div class="announcement" style="height:100px;"></div>
+      <p>Due to COVID-19, events will be delayed till 10 August 2020</p>
+    </div>
+    <div class="card">
+      <h2>Trending</h2>
+ 
+      <p>Top walks</p>
+	  <p>Top events</p>
+	  <p>Top walks</p>
+    </div>	
+    <div class="card">
+      <h3>News items</h3>
+      <p>New item1..</p>
+      <p>New item2..</p>
+      <p>New item3..</p>
+    </div>
+    <div class="card" style ="height:170px">
+      <h3>Follow us on social media</h3>
+       <div><a href="#">Twitter</a></div>
+	   <div><a href="#">Facebook</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>

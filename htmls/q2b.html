@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>OU Walking Club</title>
+    <meta name="description" content="A platform to take part in organised walks and socialise">
+    <meta name="keywords" content="OU Walking Club">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/q2b.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="leftcolumn logoiv" style="width:110px;height:110px"> </div>
+  <h1>OU Walking Club</h1>
+  <p>A platform to take part in organised walks and socialise</p>
+</div>
+
+
+<div class="topnav">
+  <a href="#Manage" >Manage</a>
+  <a href="#" style="float:right">alerts</a>
+  <a href="#" style="float:right">Login</a>
+  <a href="#" style="float:right">Register</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+   
+      <h2>Add a new walk</h2> 
+       <form action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post"  id="form10" name="form10">  
+       
+	   <div class="element">	   
+	   <label for="name">Name:</label><br/><input type="text" style="width:100%" name="name" id="name" value=""> 
+	   </div>
+	   
+       <div class="element ">	   
+	   <label for="date">Date:</label><br/><input type="date"  name="date" id="date" value=""/> 
+	   </div>	  
+	   
+       <div class="element">	   
+	   <label for="starttime">Start time:</label><br/><input type="time" name="starttime" id="starttime" value=""/> 
+	   </div>	
+
+       <div class="element ">	   
+	   <label for="meetingpoint">Meeting point:</label><br/><input type="text"  style="width:100%" name="meetingpoint" id="meetingpoint" value=""/> 
+	   </div>
+	   
+
+       <div class="element ">	   
+	   <label for="distanceinmiles">Distance in miles:</label><br/><input type="number" name="distanceinmiles" id="distanceinmiles" value=""/> 
+	   </div>	
+
+       <div class="element ">	   
+	   <label for="notes">Notes:</label><br/><textarea id="notes"  style="width:100%" name="notes" rows="10" cols="30" required maxlength="100" minlength="10"></textarea>
+	   </div>
+	   
+       <div class="element ">	   
+	   <label for="status">Status:</label>  
+	   <select class="editor-field" name="status" id="status" style="width: 100%;padding: 8px 10px;"> 
+	     <option value="Proposed">Proposed</option>
+		 <option value="Approved ">Approved </option>
+		 <option value="Rejected">Rejected</option>
+	   </select>
+	   </div>
+	   
+	   <input type="hidden" name="sessionID" value="12345678-09ab-1111-cdef"/>
+	   
+	   <div class="element" style="text-align:center;">	   
+	    <input type="submit" value="Submit" />
+	   </div>
+      </form>
+    
+ 
+  </div>
+   <div class="rightcolumn">
+ 
+    <div id="Manage" class="card">
+      <h3>Manage</h3>
+      <p style="background-color:#ccc;padding:10px;color:#000"><a href="#">Manage events</a></p>
+      <p style="background-color:#ccc;padding:10px;color:#000"><a href="#">Manage membership</a></p>
+      <p style="background-color:#ccc;padding:10px;color:#000"><a href="#">Manage New items</a></p>
+    </div>   
+   
+    <div class="card">
+      <h2>Announcements</h2>
+      <div class="announcement" style="height:100px;"></div>
+      <p>Due to COVID-19, events will be delayed till 10 August 2020</p>
+    </div>
+    <div class="card">
+      <h2>Trending</h2>
+ 
+      <p>Top walks</p>
+	  <p>Top events</p>
+	  <p>Top walks</p>
+    </div>	
+    <div class="card">
+      <h3>News items</h3>
+      <p>New item1..</p>
+      <p>New item2..</p>
+      <p>New item3..</p>
+    </div>
+    <div class="card" style ="height:170px">
+      <h3>Follow us on social media</h3>
+       <div><a href="#">Twitter</a></div>
+	   <div><a href="#">Facebook</a></div>
+    </div>
+  </div>  
+  
+
+ 
+  </div>  
+
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
